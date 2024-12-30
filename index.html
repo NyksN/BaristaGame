@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=540 height=960 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,13 +57,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/YaHak.loader.js";
+      var loaderUrl = buildUrl + "/BaristaGame.loader.js";
       var config = {
-        dataUrl: buildUrl + "/YaHak.data",
-        frameworkUrl: buildUrl + "/YaHak.framework.js",
-        codeUrl: buildUrl + "/YaHak.wasm",
+        dataUrl: buildUrl + "/BaristaGame.data",
+        frameworkUrl: buildUrl + "/BaristaGame.framework.js",
+        codeUrl: buildUrl + "/BaristaGame.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "TrinityForge",
         productName: "BS",
         productVersion: "1.0",
         showBanner: unityShowBanner,
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "540px";
+        canvas.style.height = "960px";
       }
 
       loadingBar.style.display = "block";
